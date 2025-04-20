@@ -21,7 +21,7 @@ nav a {
 
 .hero {
   background: url('images/como-point.jpg') no-repeat center center/cover;
-  color: #080101;
+  color: hsl(0, 29%, 93%);
   padding: 100px 20px;
   text-align: center;
   border-radius: 10px;
