@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>GrandView Hotel</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#booking">Booking</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Book your stay with luxury & comfort</h2>
+    <p>Experience world-class service at GrandView Hotel</p>
+    <a href="#booking" class="btn">Book Now</a>
+  </section>
+
+  <section id="rooms" class="rooms">
+    <h2>Our Rooms</h2>
+    <div class="room-card">
+      <img src="images/como-point.jpg" alt="Room 1">
+      <h3>Deluxe Room</h3>
+      <p>$120/night</p>
+    </div>
+    <div class="room-card">
+      <img src="images/Hotel_SAN.webp" alt="Room 2">
+      <h3>Suite Room</h3>
+      <p>$180/night</p>
+    </div>
+  </section>
+
+  <section class="facilities">
+    <h2>Our Facilities</h2>
+    <div class="facility-grid">
+      <div class="facility-card">🛏️ Comfortable Beds</div>
+      <div class="facility-card">📶 Free High-Speed Wi-Fi</div>
+      <div class="facility-card">🍽️ In-House Restaurant</div>
+      <div class="facility-card">🏊‍♂️ Swimming Pool</div>
+      <div class="facility-card">🧖 Spa & Wellness</div>
+      <div class="facility-card">🚗 Free Parking</div>
+      <div class="facility-card">✈️ Airport Shuttle</div>
+      <div class="facility-card">🧳 24/7 Concierge</div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Guests Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>“Absolutely loved the stay! The staff were friendly and everything was spotless. Highly recommend.”</p>
+        <h4>- Sarah J.</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>“The location is perfect, and the facilities are amazing. We’ll definitely come back again!”</p>
+        <h4>- James L.</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>“One of the best hotel experiences I've ever had. 10/10 for service and comfort.”</p>
+        <h4>- Priya D.</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Hotel Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/como-point.jpg" alt="Room Interior 1">
+      </div>
+      <div class="gallery-item">
+        <img src="images/Hotel_SAN.webp" alt="Room Interior 2">
+      </div>
+      <div class="gallery-item">
+        <img src="images/como-point.jpg" alt="Hotel Exterior">
+      </div>
+      <div class="gallery-item">
+        <img src="images/Hotel_SAN.webp" alt="Poolside View">
+      </div>
+      <div class="gallery-item">
+        <img src="images/Hotel_SAN.webp" alt="Restaurant Interior">
+      </div>
+      <div class="gallery-item">
+        <img src="images/como-point.jpg" alt="Lobby Area">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or need assistance? Get in touch with us!</p>
+    <form id="contactForm">
+      <input type="text" id="contactName" placeholder="Your Full Name" required>
+      <input type="email" id="contactEmail" placeholder="Email Address" required>
+      <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="contactConfirmation" class="confirmation"></div>
+  </section>
+  
+  <section id="reviews" class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review-card">
+      <p>"Amazing stay! The service was excellent, and the rooms were spotless. Will definitely return!"</p>
+      <h3>John Doe</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="review-card">
+      <p>"A comfortable experience, but the check-in process could be quicker. Still, a great place to stay!"</p>
+      <h3>Jane Smith</h3>
+      <p>⭐⭐⭐⭐</p>
+    </div>
+    <!-- Add more reviews dynamically or manually -->
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What time is check-in?</h3>
+      <p>Check-in is from 2:00 PM onwards.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I cancel my reservation?</h3>
+      <p>You can cancel your reservation up to 24 hours before the check-in time.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you provide airport transfers?</h3>
+      <p>Yes, we offer airport transfers for an additional fee.</p>
+    </div>
+  </section>
+  
+  
+
+  <section id="booking" class="booking">
+    <h2>Book a Room</h2>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Your Full Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <input type="number" id="guests" placeholder="Number of Guests" min="1" required>
+      
+      <label>Check-in:</label>
+      <input type="date" id="checkin" required>
+  
+      <label>Check-out:</label>
+      <input type="date" id="checkout" required>
+  
+      <label>Select Room Type:</label>
+      <select id="roomType" required>
+        <option value="">-- Select --</option>
+        <option value="Deluxe" data-price="120">Deluxe Room ($120/night)</option>
+        <option value="Suite" data-price="180">Suite Room ($180/night)</option>
+      </select>
+  
+      <div id="priceSummary" style="margin: 10px 0; font-weight: bold;"></div>
+  
+      <button type="submit">Book Now</button>
+    </form>
+    <div id="confirmation" class="confirmation"></div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 GrandView Hotel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
